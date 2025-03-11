@@ -10,13 +10,13 @@ time.sleep(5)
 
 
 try:
-    # Localize o elemento que contém o texto "Ativo:" e obtenha seu texto
+    # Localizando o elemento que contém o texto "Ativo:"
     elemento_ativo = browser.find_element(
         By.XPATH, '//td[contains(text(), "Ativo:")]/following-sibling::td')
     texto_ativo = elemento_ativo.text.strip()
     print("Ativo:", texto_ativo)
 
-    # Localize o elemento que contém o texto "Contrato ativo:" e obtenha seu texto
+    # Localizando o elemento que contém o texto "Contrato ativo:"
     elemento_contrato = browser.find_element(
         By.XPATH, '//td[contains(text(), "Contrato ativo:")]/following-sibling::td')
     texto_contrato = elemento_contrato.text.strip()
